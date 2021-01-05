@@ -3,6 +3,8 @@
 <div class = "post-entry">
     <h2>{{object.title}}</h2>
     <p>{{ object.body }}</p>
+    <a href="{% url 'post_update' post.pk %}">Edit post</a>
+    <a href="{% url 'post_delete' post.pk %}">Delete post</a>
 </div>
 
 {%endblock%}
